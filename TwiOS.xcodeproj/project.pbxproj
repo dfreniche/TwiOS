@@ -15,7 +15,7 @@
 		9919820617CC5E1900535D2D /* TWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9919820517CC5E1900535D2D /* TWAppDelegate.m */; };
 		9919820917CC5E1900535D2D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9919820717CC5E1900535D2D /* Main_iPhone.storyboard */; };
 		9919820C17CC5E1900535D2D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9919820A17CC5E1900535D2D /* Main_iPad.storyboard */; };
-		9919820F17CC5E1900535D2D /* TWFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9919820E17CC5E1900535D2D /* TWFirstViewController.m */; };
+		9919820F17CC5E1900535D2D /* TWTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9919820E17CC5E1900535D2D /* TWTimelineViewController.m */; };
 		9919821217CC5E1900535D2D /* TWSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9919821117CC5E1900535D2D /* TWSecondViewController.m */; };
 		9919821417CC5E1900535D2D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9919821317CC5E1900535D2D /* Images.xcassets */; };
 		9919821B17CC5E1900535D2D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919821A17CC5E1900535D2D /* XCTest.framework */; };
@@ -23,6 +23,7 @@
 		9919821D17CC5E1900535D2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991981F917CC5E1900535D2D /* UIKit.framework */; };
 		9919822517CC5E1900535D2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9919822317CC5E1900535D2D /* InfoPlist.strings */; };
 		9919822717CC5E1900535D2D /* TwiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9919822617CC5E1900535D2D /* TwiOSTests.m */; };
+		99569E3717CC679F0079D2D6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99569E3617CC679F0079D2D6 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +49,8 @@
 		9919820517CC5E1900535D2D /* TWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWAppDelegate.m; sourceTree = "<group>"; };
 		9919820817CC5E1900535D2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		9919820B17CC5E1900535D2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		9919820D17CC5E1900535D2D /* TWFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWFirstViewController.h; sourceTree = "<group>"; };
-		9919820E17CC5E1900535D2D /* TWFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWFirstViewController.m; sourceTree = "<group>"; };
+		9919820D17CC5E1900535D2D /* TWTimelineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWTimelineViewController.h; sourceTree = "<group>"; };
+		9919820E17CC5E1900535D2D /* TWTimelineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWTimelineViewController.m; sourceTree = "<group>"; };
 		9919821017CC5E1900535D2D /* TWSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWSecondViewController.h; sourceTree = "<group>"; };
 		9919821117CC5E1900535D2D /* TWSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWSecondViewController.m; sourceTree = "<group>"; };
 		9919821317CC5E1900535D2D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		9919822217CC5E1900535D2D /* TwiOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwiOSTests-Info.plist"; sourceTree = "<group>"; };
 		9919822417CC5E1900535D2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9919822617CC5E1900535D2D /* TwiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwiOSTests.m; sourceTree = "<group>"; };
+		99569E3617CC679F0079D2D6 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99569E3717CC679F0079D2D6 /* Social.framework in Frameworks */,
 				991981F817CC5E1900535D2D /* CoreGraphics.framework in Frameworks */,
 				991981FA17CC5E1900535D2D /* UIKit.framework in Frameworks */,
 				991981F617CC5E1900535D2D /* Foundation.framework in Frameworks */,
@@ -106,6 +109,7 @@
 		991981F417CC5E1900535D2D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				99569E3617CC679F0079D2D6 /* Social.framework */,
 				991981F517CC5E1900535D2D /* Foundation.framework */,
 				991981F717CC5E1900535D2D /* CoreGraphics.framework */,
 				991981F917CC5E1900535D2D /* UIKit.framework */,
@@ -176,8 +180,8 @@
 		9919823217CC5E7000535D2D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9919820D17CC5E1900535D2D /* TWFirstViewController.h */,
-				9919820E17CC5E1900535D2D /* TWFirstViewController.m */,
+				9919820D17CC5E1900535D2D /* TWTimelineViewController.h */,
+				9919820E17CC5E1900535D2D /* TWTimelineViewController.m */,
 				9919821017CC5E1900535D2D /* TWSecondViewController.h */,
 				9919821117CC5E1900535D2D /* TWSecondViewController.m */,
 			);
@@ -291,7 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9919820F17CC5E1900535D2D /* TWFirstViewController.m in Sources */,
+				9919820F17CC5E1900535D2D /* TWTimelineViewController.m in Sources */,
 				9919821217CC5E1900535D2D /* TWSecondViewController.m in Sources */,
 				9919820217CC5E1900535D2D /* main.m in Sources */,
 				9919820617CC5E1900535D2D /* TWAppDelegate.m in Sources */,
@@ -507,6 +511,7 @@
 				9919822C17CC5E1900535D2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9919822D17CC5E1900535D2D /* Build configuration list for PBXNativeTarget "TwiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +520,7 @@
 				9919822F17CC5E1900535D2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
