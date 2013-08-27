@@ -119,13 +119,10 @@
 			children = (
 				9919820417CC5E1900535D2D /* TWAppDelegate.h */,
 				9919820517CC5E1900535D2D /* TWAppDelegate.m */,
-				9919820717CC5E1900535D2D /* Main_iPhone.storyboard */,
-				9919820A17CC5E1900535D2D /* Main_iPad.storyboard */,
-				9919820D17CC5E1900535D2D /* TWFirstViewController.h */,
-				9919820E17CC5E1900535D2D /* TWFirstViewController.m */,
-				9919821017CC5E1900535D2D /* TWSecondViewController.h */,
-				9919821117CC5E1900535D2D /* TWSecondViewController.m */,
-				9919821317CC5E1900535D2D /* Images.xcassets */,
+				9919823217CC5E7000535D2D /* Controller */,
+				9919823117CC5E6000535D2D /* View */,
+				9919823017CC5E5900535D2D /* Model */,
+				9919823317CC5EB700535D2D /* Resources */,
 				991981FC17CC5E1900535D2D /* Supporting Files */,
 			);
 			path = TwiOS;
@@ -158,6 +155,41 @@
 				9919822317CC5E1900535D2D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9919823017CC5E5900535D2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9919823117CC5E6000535D2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9919820717CC5E1900535D2D /* Main_iPhone.storyboard */,
+				9919820A17CC5E1900535D2D /* Main_iPad.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9919823217CC5E7000535D2D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9919820D17CC5E1900535D2D /* TWFirstViewController.h */,
+				9919820E17CC5E1900535D2D /* TWFirstViewController.m */,
+				9919821017CC5E1900535D2D /* TWSecondViewController.h */,
+				9919821117CC5E1900535D2D /* TWSecondViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9919823317CC5EB700535D2D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9919821317CC5E1900535D2D /* Images.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
