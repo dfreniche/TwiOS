@@ -23,6 +23,8 @@
 		9919821D17CC5E1900535D2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991981F917CC5E1900535D2D /* UIKit.framework */; };
 		9919822517CC5E1900535D2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9919822317CC5E1900535D2D /* InfoPlist.strings */; };
 		9919822717CC5E1900535D2D /* TwiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9919822617CC5E1900535D2D /* TwiOSTests.m */; };
+		991DC4C017CF0D6E00B85889 /* DFTwitterAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 991DC4BF17CF0D6E00B85889 /* DFTwitterAccountInfo.m */; };
+		991DC4C317CF0D8B00B85889 /* DFTwitterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 991DC4C217CF0D8B00B85889 /* DFTwitterHelper.m */; };
 		99569E3717CC679F0079D2D6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99569E3617CC679F0079D2D6 /* Social.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,10 @@
 		9919822217CC5E1900535D2D /* TwiOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwiOSTests-Info.plist"; sourceTree = "<group>"; };
 		9919822417CC5E1900535D2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9919822617CC5E1900535D2D /* TwiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwiOSTests.m; sourceTree = "<group>"; };
+		991DC4BE17CF0D6E00B85889 /* DFTwitterAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTwitterAccountInfo.h; sourceTree = "<group>"; };
+		991DC4BF17CF0D6E00B85889 /* DFTwitterAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTwitterAccountInfo.m; sourceTree = "<group>"; };
+		991DC4C117CF0D8B00B85889 /* DFTwitterHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTwitterHelper.h; sourceTree = "<group>"; };
+		991DC4C217CF0D8B00B85889 /* DFTwitterHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTwitterHelper.m; sourceTree = "<group>"; };
 		99569E3617CC679F0079D2D6 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -164,6 +170,10 @@
 		9919823017CC5E5900535D2D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				991DC4BE17CF0D6E00B85889 /* DFTwitterAccountInfo.h */,
+				991DC4BF17CF0D6E00B85889 /* DFTwitterAccountInfo.m */,
+				991DC4C117CF0D8B00B85889 /* DFTwitterHelper.h */,
+				991DC4C217CF0D8B00B85889 /* DFTwitterHelper.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -297,8 +307,10 @@
 			files = (
 				9919820F17CC5E1900535D2D /* TWTimelineViewController.m in Sources */,
 				9919821217CC5E1900535D2D /* TWSecondViewController.m in Sources */,
+				991DC4C017CF0D6E00B85889 /* DFTwitterAccountInfo.m in Sources */,
 				9919820217CC5E1900535D2D /* main.m in Sources */,
 				9919820617CC5E1900535D2D /* TWAppDelegate.m in Sources */,
+				991DC4C317CF0D8B00B85889 /* DFTwitterHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "DFTwitterHelper.h"
 
 @interface TwiOSTests : XCTestCase
 
@@ -14,21 +15,39 @@
 
 @implementation TwiOSTests
 
-- (void)setUp
+
+- (void)testCreateDFTwitterAccountUsingTwitterHelper
 {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    __block BOOL wait = YES;
+    
+    [DFTwitterHelper twitterAccountInfoWithUser:@"dfrenichetester" completion:^(DFTwitterAccountInfo *account){
+        NSLog(@"Printing in BLOCK");
+        NSLog(@"%@", [account name]);
+        XCTAssertNotNil(account, @"");
+        XCTAssertEqualObjects(account.name, @"dfrenichetester", @"");
+        wait = NO;
+
+    }];
+    
+    while (wait) {
+        
+    }
 }
 
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
+- (void)testReadTimeline {
+    __block BOOL wait = YES;
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    [DFTwitterHelper readTweetsWithCompletion:^(NSArray *tweets) {
+        XCTAssertNotNil(tweets, @"");
+        NSLog(@"Number of tweets: %d", [tweets count]);
+        
+        
+        wait = NO;
+    }];
+    
+    while (wait) {
+        
+    }
 }
 
 @end
