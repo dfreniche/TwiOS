@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TWTimelineViewController : UIViewController
+@interface TWTimelineViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

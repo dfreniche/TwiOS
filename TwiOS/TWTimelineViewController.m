@@ -11,6 +11,7 @@
 #import <Accounts/Accounts.h>
 
 @interface TWTimelineViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -21,6 +22,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self retrieveTweets:nil];
+    
+#pragma mark fixme
+    
+    // [self getInfo];
 }
 
 - (void)didReceiveMemoryWarning
@@ -82,7 +87,7 @@
                   // The output of the request is placed in the log.
                   NSLog(@"HTTP Response: %i", [urlResponse statusCode]);
                   // The output of the request is placed in the log.
-                  NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:nil];
+                  NSArray *jsonResponse = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:nil];
                   
                   NSLog(@"%@", jsonResponse);
                   
@@ -109,5 +114,6 @@
     twitter = nil;
     twAccountType = nil;
 }
+
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "DFTwitterHelper.h"
-
+#import "DFTweet.h"
 @implementation DFTwitterHelper
 
 + (void)twitterAccountInfoWithUser:(NSString *)twitterUser completion:(void(^)(DFTwitterAccountInfo *))completion  {
@@ -116,10 +116,6 @@
          // Create an NSURL instance variable that points to the home_timeline end point.
          NSURL *twitterURL = [[NSURL alloc] initWithString:@"https://api.twitter.com/1.1/statuses/home_timeline.json"];
          
-         // Version 1.0 of the Twiter API supports XML responses.
-         // Use this URL if you want to see an XML response.
-         //NSURL *twitterURL2 = [[NSURL alloc] initWithString:@"http://api.twitter.com/1/statuses/home_timeline.xml"];
-         
          // Create a request
          SLRequest *requestUsersTweets = [SLRequest requestForServiceType:SLServiceTypeTwitter requestMethod:SLRequestMethodGET URL:twitterURL parameters:nil];
              
@@ -128,12 +124,24 @@
          
          // Perform the request
          [requestUsersTweets performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error2) {
+             
+             if (error2) {
+                 NSLog(@"ERROR getting tweets %@", error2.description);
+                 completion(nil);
+                 return;
+             }
+             
               // The output of the request is placed in the log.
-              NSLog(@"HTTP Response: %i", [urlResponse statusCode]);
+             NSLog(@"HTTP Response: %i", [urlResponse statusCode]);
               // The output of the request is placed in the log.
-              NSArray *jsonResponse = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:nil];
-
-             completion(jsonResponse);
+             NSArray *jsonResponse = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:nil];
+             NSMutableArray *responseTweets = [[NSMutableArray alloc] init];
+             
+             for (NSDictionary *jsonTweet in jsonResponse) {
+                 DFTweet *tweet = [[DFTweet alloc] initWithJSONObject:jsonTweet];
+                 [responseTweets addObject:tweet];
+             }
+             completion(responseTweets);
           }];
          
          // Tidy Up
