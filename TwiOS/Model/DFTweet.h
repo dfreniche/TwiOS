@@ -29,6 +29,6 @@
 /** Number of times this tweet has been retweeted */
 @property (nonatomic) NSUInteger retweetCount;
 
-- (id)initWithJSONObject:(NSDictionary *)jsonObject;
+- (id)initWithJSONObject:(NSDictionary *)jsonObject NS_DESIGNATED_INITIALIZER;
 
 @end

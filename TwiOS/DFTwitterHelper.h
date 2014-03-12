@@ -26,6 +26,17 @@
 #import <Social/Social.h>
 
 #import "DFTwitterAccountInfo.h"
+#import "DFTweet.h"
+#import "DFDirectMessage.h"
+
+#define kDFTWITTER_HELPER_DOMAIN @"DFTwitterHelper"
+
+typedef enum {
+    DFTH_NO_ACCESS_GRANTED = 0,
+    DFTH_NO_ACCOUNTS_SETUP,
+    DFTH_RATE_LIMIT_REACHED,
+    DFTH_OTHER_ERROR_CODE
+} DFTwitterHelperErrorCodes;
 
 @interface DFTwitterHelper : NSObject
 
@@ -35,7 +46,9 @@
  @see [selector]
  @warning [description]
  */
-+ (void)twitterAccountInfoWithUser:(NSString *)twitterUser completion:(void(^)(DFTwitterAccountInfo *))completion;
-+ (void)readTweetsWithCompletion:(void(^)(NSArray *))completion;
++ (void)twitterAccountInfoWithUser:(NSString *)twitterUser completion:(void(^)(DFTwitterAccountInfo *, NSError *))completion;
++ (void)tweetsWithCompletion:(void(^)(NSArray *, NSError *))completion;
++ (void)mentionsWithCompletion:(void(^)(NSArray *, NSError *))completion;
++ (void)directMessagesWithCompletion:(void(^)(NSArray *, NSError *))completion;
 
 @end

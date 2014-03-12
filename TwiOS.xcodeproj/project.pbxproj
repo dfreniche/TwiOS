@@ -22,12 +22,12 @@
 		9919821C17CC5E1900535D2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991981F517CC5E1900535D2D /* Foundation.framework */; };
 		9919821D17CC5E1900535D2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991981F917CC5E1900535D2D /* UIKit.framework */; };
 		9919822517CC5E1900535D2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9919822317CC5E1900535D2D /* InfoPlist.strings */; };
-		9919822717CC5E1900535D2D /* TwiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9919822617CC5E1900535D2D /* TwiOSTests.m */; };
+		9919822717CC5E1900535D2D /* DFTwitterHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9919822617CC5E1900535D2D /* DFTwitterHelperTests.m */; };
 		991DC4C017CF0D6E00B85889 /* DFTwitterAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 991DC4BF17CF0D6E00B85889 /* DFTwitterAccountInfo.m */; };
 		991DC4C317CF0D8B00B85889 /* DFTwitterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 991DC4C217CF0D8B00B85889 /* DFTwitterHelper.m */; };
 		99569E3717CC679F0079D2D6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99569E3617CC679F0079D2D6 /* Social.framework */; };
+		9980AE4C18D0651C0058464D /* DFDirectMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9980AE4B18D0651C0058464D /* DFDirectMessage.m */; };
 		99F12659188D245200DA9800 /* DFTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F12658188D245200DA9800 /* DFTweet.m */; };
-		99F1265B188D259700DA9800 /* DFTweetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F1265A188D259700DA9800 /* DFTweetTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,15 +62,17 @@
 		9919821A17CC5E1900535D2D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9919822217CC5E1900535D2D /* TwiOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwiOSTests-Info.plist"; sourceTree = "<group>"; };
 		9919822417CC5E1900535D2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9919822617CC5E1900535D2D /* TwiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwiOSTests.m; sourceTree = "<group>"; };
+		9919822617CC5E1900535D2D /* DFTwitterHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DFTwitterHelperTests.m; sourceTree = "<group>"; };
 		991DC4BE17CF0D6E00B85889 /* DFTwitterAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTwitterAccountInfo.h; sourceTree = "<group>"; };
 		991DC4BF17CF0D6E00B85889 /* DFTwitterAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTwitterAccountInfo.m; sourceTree = "<group>"; };
 		991DC4C117CF0D8B00B85889 /* DFTwitterHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTwitterHelper.h; sourceTree = "<group>"; };
 		991DC4C217CF0D8B00B85889 /* DFTwitterHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTwitterHelper.m; sourceTree = "<group>"; };
 		99569E3617CC679F0079D2D6 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		9980AE4A18D0651C0058464D /* DFDirectMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DFDirectMessage.h; path = Model/DFDirectMessage.h; sourceTree = "<group>"; };
+		9980AE4B18D0651C0058464D /* DFDirectMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DFDirectMessage.m; path = Model/DFDirectMessage.m; sourceTree = "<group>"; };
+		9980AE4D18D065D30058464D /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Macros.h; path = Util/Macros.h; sourceTree = "<group>"; };
 		99F12657188D245200DA9800 /* DFTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DFTweet.h; path = Model/DFTweet.h; sourceTree = "<group>"; };
 		99F12658188D245200DA9800 /* DFTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DFTweet.m; path = Model/DFTweet.m; sourceTree = "<group>"; };
-		99F1265A188D259700DA9800 /* DFTweetTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTweetTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				9919820517CC5E1900535D2D /* TWAppDelegate.m */,
 				9919823217CC5E7000535D2D /* Controller */,
 				9919823117CC5E6000535D2D /* View */,
+				9980AE4E18D065D80058464D /* Util */,
 				9919823017CC5E5900535D2D /* Model */,
 				9919823317CC5EB700535D2D /* Resources */,
 				991981FC17CC5E1900535D2D /* Supporting Files */,
@@ -157,8 +160,7 @@
 		9919822017CC5E1900535D2D /* TwiOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				9919822617CC5E1900535D2D /* TwiOSTests.m */,
-				99F1265A188D259700DA9800 /* DFTweetTests.m */,
+				9919822617CC5E1900535D2D /* DFTwitterHelperTests.m */,
 				9919822117CC5E1900535D2D /* Supporting Files */,
 			);
 			path = TwiOSTests;
@@ -182,6 +184,8 @@
 				991DC4C217CF0D8B00B85889 /* DFTwitterHelper.m */,
 				99F12657188D245200DA9800 /* DFTweet.h */,
 				99F12658188D245200DA9800 /* DFTweet.m */,
+				9980AE4A18D0651C0058464D /* DFDirectMessage.h */,
+				9980AE4B18D0651C0058464D /* DFDirectMessage.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -212,6 +216,14 @@
 				9919821317CC5E1900535D2D /* Images.xcassets */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		9980AE4E18D065D80058464D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9980AE4D18D065D30058464D /* Macros.h */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +331,7 @@
 				9919820217CC5E1900535D2D /* main.m in Sources */,
 				99F12659188D245200DA9800 /* DFTweet.m in Sources */,
 				9919820617CC5E1900535D2D /* TWAppDelegate.m in Sources */,
+				9980AE4C18D0651C0058464D /* DFDirectMessage.m in Sources */,
 				991DC4C317CF0D8B00B85889 /* DFTwitterHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,8 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9919822717CC5E1900535D2D /* TwiOSTests.m in Sources */,
-				99F1265B188D259700DA9800 /* DFTweetTests.m in Sources */,
+				9919822717CC5E1900535D2D /* DFTwitterHelperTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
