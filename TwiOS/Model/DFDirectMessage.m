@@ -13,8 +13,9 @@
 - (id)initWithJSONObject:(NSDictionary *)jsonObject {
     self = [super init];
     if (self) {
-        _text = [jsonObject valueForKeyPath:@"sender.text"];
-
+        _text = [jsonObject objectForKey:@"text"];
+        _sender= [[jsonObject objectForKey:@"sender"] objectForKey:@"name"];
+        _senderImageURL = [[jsonObject objectForKey:@"sender"] objectForKey:@"profile_image_url"];
     }
     return self;
 }

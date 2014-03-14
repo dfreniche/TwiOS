@@ -10,7 +10,9 @@
 
 @interface DFDirectMessage : NSObject
 
+@property (nonatomic, copy) NSString *sender;
 @property (nonatomic, copy) NSString *text;
+@property (nonatomic, copy) NSString *senderImageURL;
 
 - (id)initWithJSONObject:(NSDictionary *)jsonObject NS_DESIGNATED_INITIALIZER;
 
