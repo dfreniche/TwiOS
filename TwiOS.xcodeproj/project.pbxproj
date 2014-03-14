@@ -27,6 +27,7 @@
 		991DC4C317CF0D8B00B85889 /* DFTwitterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 991DC4C217CF0D8B00B85889 /* DFTwitterHelper.m */; };
 		99569E3717CC679F0079D2D6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99569E3617CC679F0079D2D6 /* Social.framework */; };
 		9980AE4C18D0651C0058464D /* DFDirectMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9980AE4B18D0651C0058464D /* DFDirectMessage.m */; };
+		9996378818D2F4010025500B /* TWMentionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9996378718D2F4010025500B /* TWMentionsViewController.m */; };
 		999C884818D0C401003C955A /* TWTweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 999C884718D0C401003C955A /* TWTweetCell.m */; };
 		99F12659188D245200DA9800 /* DFTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F12658188D245200DA9800 /* DFTweet.m */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,8 @@
 		9980AE4A18D0651C0058464D /* DFDirectMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DFDirectMessage.h; path = Model/DFDirectMessage.h; sourceTree = "<group>"; };
 		9980AE4B18D0651C0058464D /* DFDirectMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DFDirectMessage.m; path = Model/DFDirectMessage.m; sourceTree = "<group>"; };
 		9980AE4D18D065D30058464D /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Macros.h; path = Util/Macros.h; sourceTree = "<group>"; };
+		9996378618D2F4010025500B /* TWMentionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWMentionsViewController.h; sourceTree = "<group>"; };
+		9996378718D2F4010025500B /* TWMentionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWMentionsViewController.m; sourceTree = "<group>"; };
 		999C884618D0C401003C955A /* TWTweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTweetCell.h; path = View/TWTweetCell.h; sourceTree = "<group>"; };
 		999C884718D0C401003C955A /* TWTweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTweetCell.m; path = View/TWTweetCell.m; sourceTree = "<group>"; };
 		99F12657188D245200DA9800 /* DFTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DFTweet.h; path = Model/DFTweet.h; sourceTree = "<group>"; };
@@ -211,6 +214,8 @@
 				9919820E17CC5E1900535D2D /* TWTimelineViewController.m */,
 				9919821017CC5E1900535D2D /* TWSecondViewController.h */,
 				9919821117CC5E1900535D2D /* TWSecondViewController.m */,
+				9996378618D2F4010025500B /* TWMentionsViewController.h */,
+				9996378718D2F4010025500B /* TWMentionsViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -331,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9919820F17CC5E1900535D2D /* TWTimelineViewController.m in Sources */,
+				9996378818D2F4010025500B /* TWMentionsViewController.m in Sources */,
 				9919821217CC5E1900535D2D /* TWSecondViewController.m in Sources */,
 				991DC4C017CF0D6E00B85889 /* DFTwitterAccountInfo.m in Sources */,
 				9919820217CC5E1900535D2D /* main.m in Sources */,
