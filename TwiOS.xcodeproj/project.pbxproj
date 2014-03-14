@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		990A58B8CCCE418CA18361D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A13AEE52C1E489999CCD1E8 /* libPods.a */; };
 		991981F617CC5E1900535D2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991981F517CC5E1900535D2D /* Foundation.framework */; };
 		991981F817CC5E1900535D2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991981F717CC5E1900535D2D /* CoreGraphics.framework */; };
 		991981FA17CC5E1900535D2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991981F917CC5E1900535D2D /* UIKit.framework */; };
@@ -29,6 +30,7 @@
 		9980AE4C18D0651C0058464D /* DFDirectMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9980AE4B18D0651C0058464D /* DFDirectMessage.m */; };
 		9996378818D2F4010025500B /* TWMentionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9996378718D2F4010025500B /* TWMentionsViewController.m */; };
 		9996378B18D2F7570025500B /* TWConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9996378A18D2F7570025500B /* TWConfigViewController.m */; };
+		9996378E18D2FFD20025500B /* TWDMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9996378D18D2FFD20025500B /* TWDMViewController.m */; };
 		999C884818D0C401003C955A /* TWTweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 999C884718D0C401003C955A /* TWTweetCell.m */; };
 		99F12659188D245200DA9800 /* DFTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F12658188D245200DA9800 /* DFTweet.m */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A13AEE52C1E489999CCD1E8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		991981F217CC5E1900535D2D /* TwiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		991981F517CC5E1900535D2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		991981F717CC5E1900535D2D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -78,10 +81,14 @@
 		9996378718D2F4010025500B /* TWMentionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWMentionsViewController.m; sourceTree = "<group>"; };
 		9996378918D2F7570025500B /* TWConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWConfigViewController.h; sourceTree = "<group>"; };
 		9996378A18D2F7570025500B /* TWConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWConfigViewController.m; sourceTree = "<group>"; };
+		9996378C18D2FFD20025500B /* TWDMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWDMViewController.h; sourceTree = "<group>"; };
+		9996378D18D2FFD20025500B /* TWDMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWDMViewController.m; sourceTree = "<group>"; };
+		9996378F18D302B10025500B /* TwitterPrivateKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterPrivateKeys.h; sourceTree = "<group>"; };
 		999C884618D0C401003C955A /* TWTweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTweetCell.h; path = View/TWTweetCell.h; sourceTree = "<group>"; };
 		999C884718D0C401003C955A /* TWTweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTweetCell.m; path = View/TWTweetCell.m; sourceTree = "<group>"; };
 		99F12657188D245200DA9800 /* DFTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DFTweet.h; path = Model/DFTweet.h; sourceTree = "<group>"; };
 		99F12658188D245200DA9800 /* DFTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DFTweet.m; path = Model/DFTweet.m; sourceTree = "<group>"; };
+		C67498BF3EBD4B96BC114E38 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +100,7 @@
 				991981F817CC5E1900535D2D /* CoreGraphics.framework in Frameworks */,
 				991981FA17CC5E1900535D2D /* UIKit.framework in Frameworks */,
 				991981F617CC5E1900535D2D /* Foundation.framework in Frameworks */,
+				990A58B8CCCE418CA18361D2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +124,7 @@
 				9919822017CC5E1900535D2D /* TwiOSTests */,
 				991981F417CC5E1900535D2D /* Frameworks */,
 				991981F317CC5E1900535D2D /* Products */,
+				C67498BF3EBD4B96BC114E38 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +145,7 @@
 				991981F717CC5E1900535D2D /* CoreGraphics.framework */,
 				991981F917CC5E1900535D2D /* UIKit.framework */,
 				9919821A17CC5E1900535D2D /* XCTest.framework */,
+				8A13AEE52C1E489999CCD1E8 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,6 +205,7 @@
 				99F12658188D245200DA9800 /* DFTweet.m */,
 				9980AE4A18D0651C0058464D /* DFDirectMessage.h */,
 				9980AE4B18D0651C0058464D /* DFDirectMessage.m */,
+				9996378F18D302B10025500B /* TwitterPrivateKeys.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -221,6 +232,8 @@
 				9996378718D2F4010025500B /* TWMentionsViewController.m */,
 				9996378918D2F7570025500B /* TWConfigViewController.h */,
 				9996378A18D2F7570025500B /* TWConfigViewController.m */,
+				9996378C18D2FFD20025500B /* TWDMViewController.h */,
+				9996378D18D2FFD20025500B /* TWDMViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -248,9 +261,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9919822A17CC5E1900535D2D /* Build configuration list for PBXNativeTarget "TwiOS" */;
 			buildPhases = (
+				B4ADF9E9C6424DD4A43A3907 /* Check Pods Manifest.lock */,
 				991981EE17CC5E1900535D2D /* Sources */,
 				991981EF17CC5E1900535D2D /* Frameworks */,
 				991981F017CC5E1900535D2D /* Resources */,
+				33C825D189814537AE53AAED /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -335,6 +350,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33C825D189814537AE53AAED /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4ADF9E9C6424DD4A43A3907 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		991981EE17CC5E1900535D2D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -350,6 +398,7 @@
 				9919820617CC5E1900535D2D /* TWAppDelegate.m in Sources */,
 				9980AE4C18D0651C0058464D /* DFDirectMessage.m in Sources */,
 				991DC4C317CF0D8B00B85889 /* DFTwitterHelper.m in Sources */,
+				9996378E18D2FFD20025500B /* TWDMViewController.m in Sources */,
 				999C884818D0C401003C955A /* TWTweetCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,6 +529,7 @@
 		};
 		9919822B17CC5E1900535D2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C67498BF3EBD4B96BC114E38 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -493,6 +543,7 @@
 		};
 		9919822C17CC5E1900535D2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C67498BF3EBD4B96BC114E38 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
