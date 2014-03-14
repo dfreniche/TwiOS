@@ -20,6 +20,7 @@
             _userName = [[jsonObject valueForKey:@"user"] valueForKey:@"name"];
             _favoriteCount = [[jsonObject valueForKey:@"favorite_count"] integerValue];
             _retweetCount =[[jsonObject valueForKey:@"retweet_count"] integerValue];
+            _profileImageUrl = [[jsonObject valueForKey:@"user"] valueForKey:@"profile_image_url"]; 
         }
     }
     return self;

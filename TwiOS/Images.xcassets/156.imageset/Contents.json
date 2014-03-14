@@ -1,6 +1,10 @@
 {
   "images" : [
     {
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
       "resizing" : {
         "mode" : "9-part",
         "center" : {
@@ -17,10 +21,6 @@
       },
       "idiom" : "universal",
       "filename" : "156.png",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
       "scale" : "2x"
     }
   ],

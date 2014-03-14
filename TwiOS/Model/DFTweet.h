@@ -29,6 +29,8 @@
 /** Number of times this tweet has been retweeted */
 @property (nonatomic) NSUInteger retweetCount;
 
+@property (nonatomic) NSString *profileImageUrl;
+
 - (id)initWithJSONObject:(NSDictionary *)jsonObject NS_DESIGNATED_INITIALIZER;
 
 @end
